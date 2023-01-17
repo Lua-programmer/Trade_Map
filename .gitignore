@@ -1,0 +1,9 @@
+target
+build
+.idea
+.mvn
+HELP.md
+mvnw
+mvnw.cmd
+*.iml
+/docker/config/env.env

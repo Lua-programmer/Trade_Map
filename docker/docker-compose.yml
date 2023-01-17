@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  db:
+    container_name: trade_map
+    image:  mysql/mysql-server
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    shm_size: 4gb
+    env_file:
+      - config/env.env
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    networks:
+      - api-b3-net
+
+networks:
+  api-b3-net:
+    driver: bridge
+
+volumes:
+  db_data: { }
