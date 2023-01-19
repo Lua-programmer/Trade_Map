@@ -7,3 +7,4 @@ mvnw
 mvnw.cmd
 *.iml
 /docker/config/env.env
+/src/main/resources/application-dev.properties
