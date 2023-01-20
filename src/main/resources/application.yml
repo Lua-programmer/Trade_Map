@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+
+
+#Kafka
+kafka:
+  brokers: http://localhost:9092
+  topic-action-b3: stock.b3.datas
